@@ -5,11 +5,22 @@ var y = "abc";
 var a = x;
 var b = y;
 
+
+x = 10;
+y = "abc";
+a = 10;
+b = "abc";
+
 // Value of x, y, a, b
 var x = 10;
 var y = "abc";
 var a = x;
 var b = y;
+a = 5;
+b = "def";
+
+x = 10;
+y = "abc";
 a = 5;
 b = "def";
 
@@ -39,17 +50,17 @@ console.log([10] === [10]);
 // What's the output?
 
 function personDetails(person) {
-  person.age = 25;
-  person = {
-    name: "John",
-    age: 50
-  };
+	person.age = 25;
+	person = {
+		name: "John",
+		age: 50
+	};
 
-  return person;
+	return person;
 }
 var personObj1 = {
-  name: "Alex",
-  age: 30
+	name: "Alex",
+	age: 30
 };
 var personObj2 = personDetails(personObj1);
 console.log(personObj1); // -> ?
@@ -86,12 +97,12 @@ console.log(a === b);
 
 // Clone the object person in clone
 var person = {
-  name: "Mark",
-  age: 34,
-  subjects: {
-    maths: 78,
-    physics: 43
-  }
+	name: "Mark",
+	age: 34,
+	subjects: {
+		maths: 78,
+		physics: 43
+	}
 };
 
 var clone = {};
